@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/dz0401006/Desktop/online_express/back/src/logs/error/.451b912d77e2f1881b30113e70195784a2db5b00-audit.json",
+    "files": [
+        {
+            "date": 1656934689221,
+            "name": "/Users/dz0401006/Desktop/online_express/back/src/logs/error/2022-07-04.log",
+            "hash": "6e00e47f573b5aa61b7ff4a0735ae654e28ecc1ce7fcf3aaf638a1316f45a4f2"
+        }
+    ],
+    "hashType": "sha256"
+}
