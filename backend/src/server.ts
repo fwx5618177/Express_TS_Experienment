@@ -4,12 +4,12 @@
  * Module dependencies.
  */
 
-import { app } from '../app';
+import { app } from './app';
 import debug from 'debug';
 import * as http from 'http';
 import { AddressInfo } from 'net';
 
-export interface ErrnoException extends Error {
+interface ErrnoException extends Error {
   errno?: number;
   code?: string;
   path?: string;
