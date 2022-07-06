@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+exports.app = void 0;
+var express_1 = require("express");
+var path_1 = require("path");
+var cookie_parser_1 = require("cookie-parser");
+var morgan_1 = require("morgan");
+var index_1 = require("./routes/index");
+var users_1 = require("./routes/users");
+exports.app = (0, express_1["default"])();
+exports.app.use((0, morgan_1["default"])('dev'));
+exports.app.use(express_1["default"].json());
+exports.app.use(express_1["default"].urlencoded({ extended: false }));
+exports.app.use((0, cookie_parser_1["default"])());
+exports.app.use(express_1["default"].static(path_1["default"].join(__dirname, 'public')));
+exports.app.use('/', index_1["default"]);
+exports.app.use('/users', users_1["default"]);
