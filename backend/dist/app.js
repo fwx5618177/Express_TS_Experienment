@@ -1,17 +1,31 @@
 "use strict";
-exports.__esModule = true;
-exports.app = void 0;
-var express_1 = require("express");
-var path_1 = require("path");
-var cookie_parser_1 = require("cookie-parser");
-var morgan_1 = require("morgan");
-var index_1 = require("./routes/index");
-var users_1 = require("./routes/users");
-exports.app = (0, express_1["default"])();
-exports.app.use((0, morgan_1["default"])('dev'));
-exports.app.use(express_1["default"].json());
-exports.app.use(express_1["default"].urlencoded({ extended: false }));
-exports.app.use((0, cookie_parser_1["default"])());
-exports.app.use(express_1["default"].static(path_1["default"].join(__dirname, 'public')));
-exports.app.use('/', index_1["default"]);
-exports.app.use('/users', users_1["default"]);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "app", {
+    enumerable: true,
+    get: ()=>app
+});
+const _express = _interopRequireDefault(require("express"));
+const _path = _interopRequireDefault(require("path"));
+const _cookieParser = _interopRequireDefault(require("cookie-parser"));
+const _morgan = _interopRequireDefault(require("morgan"));
+const _index = _interopRequireDefault(require("./routes/index"));
+const _users = _interopRequireDefault(require("./routes/users"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const app = (0, _express.default)();
+app.use((0, _morgan.default)('dev'));
+app.use(_express.default.json());
+app.use(_express.default.urlencoded({
+    extended: false
+}));
+app.use((0, _cookieParser.default)());
+app.use(_express.default.static(_path.default.join(__dirname, 'public')));
+app.use('/', _index.default);
+app.use('/users', _users.default);
+
+//# sourceMappingURL=app.js.map
