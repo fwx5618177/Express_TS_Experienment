@@ -1,4 +1,6 @@
-# TypeScript + Express API Server 系统
+# TypeScript + Prisma + Express API Server 系统
+
+基于Express的一键搭建模板
 
 - [ ] Makefile
 - [ ] docker
@@ -34,7 +36,8 @@
 - [ ] swagger-ui-express - 此模块允许您基于文件提供从 express自动生成的swagger-uiswagger.json生成的 API 文档。结果是通过路由从 API 服务器托管的 API 的实时文档。
 - [ ] winston - 简单且通用的日志库，支持多种传输
 - [ ] morgan - node.js 的 HTTP 请求记录器中间件
+- [ ] oss
+- [x] prisma
 
-# 搭建流程
-
+# 功能介绍
 
