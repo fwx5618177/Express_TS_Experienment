@@ -10,5 +10,5 @@
 - 打包二进制: [JXcore](https://github.com/jxcore/jxcore-release)
 - 微服务: seneca, moleculer
 
-# Node 微服务博客系统-中台系统
+# 搭建Node 微服务博客系统-中台系统
 
