@@ -1,9 +1,10 @@
 # TypeScript + Prisma + Express API Server 系统
+1. 一键化使用
+2. Docker的应用
 
-基于Express的一键搭建模板
-
-- [ ] Makefile
-- [ ] docker
+# 基于Express的一键搭建模板
+- [x] Makefile
+- [x] docker
 - [x] husky
 - [x] eslint
   - [x] lint-staged
@@ -24,7 +25,7 @@
 - [x] dotenv
   - [x] env.local
 - [x] cors
-- [ ] supertest - 用于测试 HTTP 服务器的 SuperAgent 驱动库
+- [x] supertest - 用于测试 HTTP 服务器的 SuperAgent 驱动库
 - [x] class-transformer - 允许使用基于装饰器和非装饰器的验证，将普通对象转换为类的某个实例，允许根据标准序列化/反序列化对象
 - [x] bcrypt - 散列密码的库
 - [x] compression - Node.js 压缩中间件
@@ -41,3 +42,4 @@
 
 # 功能介绍
 
+TODO
