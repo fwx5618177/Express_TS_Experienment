@@ -1,6 +1,7 @@
 # TypeScript + Prisma + Express API Server 系统
 1. 一键化使用
 2. Docker的应用
+3. Graphql
 
 # 基于Express的一键搭建模板
 - [x] Makefile
@@ -39,7 +40,48 @@
 - [ ] oss
 - [x] prisma
 - [x] envalid - Envalid 是一个小型库，用于验证和访问 Node.js（v8.12 或更高版本）程序中的环境变量
+- [x] graphql - graphql传输方式
+- [x] apollo-server-express - graphql在线测试接口平台
 
 # 功能介绍
 
 TODO
+
+## 1. Graphql
+- 新增Graphql
+- 新增'http://localhost:3000/graphql', 'http://localhost:3000/graphql/mock'
+
+0. 运行docker测试数据库: `docker-compose -f docker-compose-dev.yml up --force-recreate`, 运行`npm run prisma:migrate`
+1. 打开: `http://localhost:3000/graphql`，可以访问在线测试graphql平台
+2. CRUD:
+```graphql
+mutation {
+    createPost(post: {
+    id: "12",
+    title: "12",
+    content: "12",
+  }) {
+        id,
+        title,
+        content
+    }
+}
+
+query {
+  listPosts {
+        id,
+        title,
+        content
+  }
+}
+
+query {
+  getPostById(postId: "8") {
+        id,
+        title,
+        content
+  }
+}
+```
+
+
