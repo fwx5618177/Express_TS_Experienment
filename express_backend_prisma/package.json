@@ -1,5 +1,5 @@
 {
-  "name": "back",
+  "name": "express_backend_test",
   "version": "0.0.0",
   "description": "TypeScript + Prisma + MySQL + Express API Server",
   "author": "",
